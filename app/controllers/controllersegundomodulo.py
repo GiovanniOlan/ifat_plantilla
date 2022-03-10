@@ -6,4 +6,4 @@ from flask import render_template
 
 class IndexController(MethodView):
     def get(self):
-        return "<h1>Esto es el index de la segunda señora</h1>"
+        return render_template('/segundoModulo/index.html')
