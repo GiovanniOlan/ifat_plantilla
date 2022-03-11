@@ -8,6 +8,9 @@ class IndexController(MethodView):
     def get(self):
         return render_template('/primerModulo/index.html')
 
+class ProductosController(MethodView):
+    def get(self):
+        return render_template('/primerModulo/productos.html')
 class AgregarproductoController(MethodView):
     def get(self):
         return render_template('/primerModulo/agregar-producto.html')

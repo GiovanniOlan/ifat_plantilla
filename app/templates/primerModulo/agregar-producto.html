@@ -2,15 +2,285 @@
 
 {% block body %}
 
-
-<div class="mobile-menu-overlay"></div>
-
 <div class="main-container">
-    <div class="pd-ltr-20">
-        <h1>Esto es La vista agregar producto</h1>
+    <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+
+            <div class="pd-20 card-box mb-30">
+                <div class="clearfix">
+                    <h4 class="text-blue h4">Alta de Productos</h4>
+                </div>
+                <div class="wizard-content">
+                    <form class="tab-wizard wizard-circle wizard">
+                        <h5>Datos generales</h5>
+                        <section>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Clave</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Descripción</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Imagen</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input">
+                                            <label class="custom-file-label">Imagen del producto</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Step 2 -->
+                        <h5>Producto</h5>
+                        <section>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Línea</label>
+                                        <select class="custom-select col-12">
+                                            <option selected="">Seleccione una línea</option>
+                                            <option value="1">Línea 1</option>
+                                            <option value="2">Línea 2</option>
+                                            <option value="3">Línea 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Unidad de entrada</label>
+                                        <input type="text" value="pz" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Tiempo de surtido</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Unidad de salida</label>
+                                        <input type="text" value="pz" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Control de almacén</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Factor entre unidades</label>
+                                        <input type="text" value="1.0000" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Volumen</label>
+                                        <input type="text" value="1.0000" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Peso</label>
+                                        <input type="text" value="1.0000" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Unidad de empague</label>
+                                        <input type="text" value="1.0000" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Step 3 -->
+                        <h5>Precios</h5>
+                        <section>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Precio Público</label>
+                                        <select class="custom-select col-12">
+                                            <option selected="">Seleccione un precio</option>
+                                            <option value="1">Precio Público</option>
+                                            <option value="2">Precio Minímo</option>
+                                            <option value="3">Precio Liquidación</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Proveedor</label>
+                                        <select class="custom-select col-12">
+                                            <option selected="">Seleccione un proveedor</option>
+                                            <option value="1">Proveedor 1</option>
+                                            <option value="2">Proveedor 2</option>
+                                            <option value="3">Proveedor 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Existencia</label>
+                                        <input type="text" value="0" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>stock min.</label>
+                                        <input type="text" value="0" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>stock máx.</label>
+                                        <input type="text" value="0" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>apartado</label>
+                                        <input type="text" value="0" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <label class="weight-600">Costeo</label>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="customRadio5" name="customRadio"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio5">PEPS</label>
+                                    </div>
+                                    <div class="custom-control custom-radio mb-5">
+                                        <input type="radio" id="customRadio6" name="customRadio"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio6">Promedio</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <h5>Impuestos</h5>
+                        <section>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Esquema</label>
+                                        <select class="custom-select col-12">
+                                            <option selected="">Seleccione un esquema</option>
+                                            <option value="1">Esquema 1</option>
+                                            <option value="2">Esquema 2</option>
+                                            <option value="3">Esquema 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <h5>Resgistro y acumulados</h5>
+                        <section>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <h6>Cantidades pendientes</h6>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Pendientes por recibir</label>
+                                        <input type="text" value="0" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Pendientes por surtir</label>
+                                        <input type="text" value="0" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <h6>Costos</h6>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Promedio</label>
+                                        <input type="text" value="0.000000" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Último</label>
+                                        <input type="text" value="0.000000" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <h6>Acumulados anuales de ventas</h6>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Cantidad</label>
+                                        <input type="text" value="0" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Monto</label>
+                                        <input type="text" value="0.00" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Fecha última venta</label>
+                                        <input class="form-control date-picker" placeholder="Seleccione la fecha"
+                                            type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <h6>Acumulados anuales de compras</h6>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Cantidad</label>
+                                        <input type="text" value="0" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Monto</label>
+                                        <input type="text" value="0.00" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Fecha última compra</label>
+                                        <input class="form-control date-picker" placeholder="Seleccione la fecha"
+                                            type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </form>
+                </div>
+            </div>
+
+            <!-- success Popup html Start -->
+            <div class="modal fade" id="success-modal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center font-18">
+                            <h3 class="mb-20">Alta de producto</h3>
+                            <div class="mb-30 text-center"><img src="vendors/images/success.png"></div>
+                            Se ha registrado con éxito el producto
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- success Popup html End -->
+        </div>
+        <!-- <div class="footer-wrap pd-20 mb-20 card-box">
+            DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit
+                Hingarajiya</a>
+        </div> -->
     </div>
 </div>
-
 
 
 
