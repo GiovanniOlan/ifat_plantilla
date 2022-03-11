@@ -1,0 +1,101 @@
+{% extends '/primerModulo/layouts/main.html' %}
+
+{% block body %}
+
+
+<div class="main-container">
+    <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+
+            <!-- Simple Datatable start -->
+            <div class="card-box mb-30">
+                <div class="pd-20" style="display: flex; justify-content: space-between;">
+                    <h4 class="text-blue h4">Ordenes de Compras</h4>
+                </div>
+                <div class="pb-20" style="padding: 10px 10px; justify-content: flex-end;">
+                    <a href="reporte-orden" class="btn btn-dark" id="reset-settings">Reporte por proveedor</a>
+                    <a href="nueva-orden" class="btn btn-success" id="reset-settings">Nueva orden</a>
+                </div>
+                <div class="pb-20">
+                    <table class="data-table table stripe hover nowrap">
+                        <thead>
+                            <tr>
+                                <th class="table-plus datatable-nosort">Título</th>
+                                <th>Fecha de inicio</th>
+                                <th>Proveedor</th>
+                                <th>Fecha de termino</th>
+                                <th>Estado</th>
+                                <th class="datatable-nosort">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-plus">Orden de compra 1</td>
+                                <td>29-03-2022</td>
+                                <td>Proveedor 1
+                                </td>
+                                <td>30-03-2022</td>
+                                <td>En proceso</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                            <i class="dw dw-more"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                            <a class="dropdown-item" href="#"><i class="dw dw-eye"></i> Ver</a>
+                                            <a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Editar</a>
+                                            <!-- <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a> -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-plus">Orden de compra 2</td>
+                                <td>29-03-2022</td>
+                                <td>Proveedor 2</td>
+                                <td>30-03-2022</td>
+                                <td>Aceptada</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                            <i class="dw dw-more"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                            <a class="dropdown-item" href="#"><i class="dw dw-eye"></i> Ver</a>
+                                            <a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Editar</a>
+                                            <!-- <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a> -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-plus">Orden de compra 3</td>
+                                <td>29-03-2022</td>
+                                <td>Proveedor 3</td>
+                                <td>30-03-2022</td>
+                                <td>Rechazada</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                            <i class="dw dw-more"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                            <a class="dropdown-item" href="#"><i class="dw dw-eye"></i> Ver</a>
+                                            <a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Editar</a>
+                                            <!-- <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a> -->
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Simple Datatable End -->
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

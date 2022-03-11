@@ -11,3 +11,15 @@ class IndexController(MethodView):
 class AgregarproductoController(MethodView):
     def get(self):
         return render_template('/primerModulo/agregar-producto.html')
+
+class NuevaordenController(MethodView):
+    def get(self):
+        return render_template('/primerModulo/nueva-orden.html')
+
+class OrdencomprasController(MethodView):
+    def get(self):
+        return render_template('/primerModulo/orden-compras.html')
+
+class ReporteordenController(MethodView):
+    def get(self):
+        return render_template('/primerModulo/reporte-orden.html')
