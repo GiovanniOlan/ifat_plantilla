@@ -7,3 +7,8 @@ from flask import render_template
 class LoginController(MethodView):
     def get(self):
         return render_template('login.html')
+
+
+class RegistrarController(MethodView):
+    def get(self):
+        return render_template('registrar-usuario.html')

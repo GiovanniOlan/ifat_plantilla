@@ -28,6 +28,7 @@ app=Flask(__name__)
 
 #Login o archivos que no estan en un modulo en concreto
 app.add_url_rule(loginRoutes["login_route"], view_func=loginRoutes['login_controller'])
+app.add_url_rule(loginRoutes["registrar_route"], view_func=loginRoutes['registrar_controller'])
 
 
 
