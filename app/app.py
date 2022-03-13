@@ -20,5 +20,6 @@ app.add_url_rule(primerModuloRoutes["reporteorden_route"], view_func=primerModul
 
 #SEGUNDA SEÑORA - Si vas a trabajar en la segunda señora, descomenta estas rutas y comenta las de la primera señora
 #app.add_url_rule(segundoModuloRoutes["index_route"], view_func=segundoModuloRoutes['index_controller'])
+#app.add_url_rule(segundoModuloRoutes["index_route"], view_func=segundoModuloRoutes['index_controller'])
 
 
