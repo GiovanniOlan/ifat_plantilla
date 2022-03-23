@@ -7,25 +7,25 @@
 
     <!-- Site favicon -->
     <link rel="apple-touch-icon" sizes="180x180"
-          href="{{url_for('static',filename='vendors/images/apple-touch-icon.png')}}">
+        href="{{url_for('static',filename='vendors/images/apple-touch-icon.png')}}">
     <link rel="icon" type="image/png" sizes="32x32"
-          href="{{url_for('static',filename='vendors/images/favicon-32x32.png')}}">
+        href="{{url_for('static',filename='vendors/images/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16"
-          href="{{url_for('static',filename='vendors/images/favicon-16x16.png')}}">
+        href="{{url_for('static',filename='vendors/images/favicon-16x16.png')}}">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendors/styles/core.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendors/styles/icon-font.min.css')}}">
     <link rel="stylesheet" type="text/css"
-          href="{{url_for('static',filename='src/plugins/datatables/css/dataTables.bootstrap4.min.css')}}">
+        href="{{url_for('static',filename='src/plugins/datatables/css/dataTables.bootstrap4.min.css')}}">
     <link rel="stylesheet" type="text/css"
-          href="{{url_for('static',filename='src/plugins/datatables/css/responsive.bootstrap4.min.css')}}">
+        href="{{url_for('static',filename='src/plugins/datatables/css/responsive.bootstrap4.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendors/styles/style.css')}}">
 
     <link rel="stylesheet" type="text/css" href="static/src/plugins/jquery-steps/jquery.steps.css">
@@ -153,12 +153,18 @@
                         <span class="micon dw dw-user1"></span><span class="mtext">Proveedores</span>
                     </a>
                 </li>
-                <li>
-                    <a href="/productos" class="dropdown-toggle no-arrow">
+                <li class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle">
                         <span class="micon dw dw-house-1"></span><span class="mtext">Productos</span>
                     </a>
+                    <ul class="submenu">
+                        <li><a href="/productos">ver lista de productos</a></li>
+                        <li><a href="/agregar-producto">Agregar producto</a></li>
+                        <li><a href="#">Generar código de barra</a></li>
+                    </ul>
                 </li>
                 <li>
+                    
                     <a href="/orden-compras" class="dropdown-toggle no-arrow">
                         <span class="micon dw dw-edit2"></span><span class="mtext">Orden de compras</span>
                     </a>
@@ -185,6 +191,7 @@
 {% endblock %}
 
 <!-- js -->
+
 <script src="{{url_for('static',filename='vendors/scripts/core.js')}}"></script>
 <script src="{{url_for('static',filename='vendors/scripts/script.min.js')}}"></script>
 <script src="{{url_for('static',filename='vendors/scripts/process.js')}}"></script>
@@ -195,6 +202,7 @@
 <script src="{{url_for('static',filename='src/plugins/datatables/js/dataTables.responsive.min.js')}}"></script>
 <script src="{{url_for('static',filename='src/plugins/datatables/js/responsive.bootstrap4.min.js')}}"></script>
 <script src="{{url_for('static',filename='vendors/scripts/dashboard.js')}}"></script>
+<script src="{{url_for('static',filename='vendors/scripts/advanced-components.js')}}"></script>
 
 <script src="static/src/plugins/jquery-steps/jquery.steps.js"></script>
 <script src="static/vendors/scripts/steps-setting.js"></script>
