@@ -1,0 +1,221 @@
+{% extends '/segundoModulo/layouts/main.html' %}
+
+{% block body %}
+
+<div class="main-container">
+    <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <!-- <div class="title">
+                            <h4>Form Wizards</h4>
+                        </div> -->
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="recibo-mercancia">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Reporte de compras por proveedor
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-right">
+                        <div class="dropdown">
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                Opciones
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Exportar</a>
+                                <a class="dropdown-item" href="#">Imprimir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pd-20 card-box mb-30">
+                <div class="clearfix">
+                    <h4 class="text-blue h4">Reporte de compras por proveedor</h4>
+                </div>
+                <br>
+                <div class="wizard-content">
+                    <!-- <form class="tab-wizard wizard-circle wizard">
+                        <section>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <h5>Título del reporte:</h5><br>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </form> -->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-30">
+                            <div class="card-box pd-30 height-100-p">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <h5>Título del reporte:</h5><br>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5>Periodo a reportar</h5><br>
+                                <section>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Desde</label>
+                                                <input type="text" class="form-control date-picker"
+                                                    placeholder="Seleccionar fecha">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Hasta</label>
+                                                <input type="text" class="form-control date-picker"
+                                                    placeholder="Seleccionar fecha">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Clasificación del proveedor</label>
+                                                <select class="custom-select form-control">
+                                                    <option value="Amsterdam">Clasificación 1</option>
+                                                    <option value="Berlin">Clasificación 2</option>
+                                                    <option value="Frankfurt">Clasificación 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group" data-select2-id="7">
+                                                <label>Producto</label>
+                                                <select class="custom-select2 form-control select2-hidden-accessible"
+                                                    name="state" style="width: 100%; height: 38px;" data-select2-id="1"
+                                                    tabindex="-1" aria-hidden="true">
+                                                    <optgroup label="Clasificación 1" data-select2-id="15">
+                                                        <option value="AK" data-select2-id="3">Producto 1</option>
+                                                        <option value="HI" data-select2-id="16">Producto 2</option>
+                                                    </optgroup>
+                                                    <optgroup label="Clasificación 2" data-select2-id="17">
+                                                        <option value="CA" data-select2-id="18">Producto 3</option>
+                                                        <option value="NV" data-select2-id="19">Producto 4</option>
+                                                    </optgroup>
+                                                    <optgroup label="Clasificación 3" data-select2-id="22">
+                                                        <option value="AZ" data-select2-id="23">Producto 5</option>
+                                                        <option value="CO" data-select2-id="24">Producto 6</option>
+                                                    </optgroup>
+                                                </select>
+                                                <!-- <span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" data-select2-id="2" style="width: 100%;">
+                                                    <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                                </span> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Línea del producto</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="Depende del producto">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-30">
+                            <div class="card-box pd-30 height-100-p">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Devolución</label>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                                    <label for="html">Devoluciones</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Orden por</label>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input type="radio" id="age1" name="age" value="30">
+                                                    <label for="age1">Ascendente</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="radio" id="age2" name="age" value="60">
+                                                    <label for="age2">Descendente</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="radio" id="age3" name="age" value="100">
+                                                    <label for="age3">Proveedor</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Proveedor a reportar</label>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input type="radio" id="rd" name="rd" value="50">
+                                                    <label for="rd">Todos</label><br>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="rd2">Cuántos</label><br>
+                                                    <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <button type="button" class="btn btn-success">Aceptar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <button type="button" class="btn btn-danger">Cancelar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <button type="button" class="btn btn-light">? Ayuda</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- success Popup html Start -->
+        <div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center font-18">
+                        <h3 class="mb-20">Reporte registrado con éxito!</h3>
+                        <div class="mb-30 text-center"><img src="vendors/images/success.png"></div>
+                        Generando reporte
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- success Popup html End -->
+    </div>
+    <!-- <div class="footer-wrap pd-20 mb-20 card-box">
+        <img src="vendors/images/blue-logo.png" alt="" class="light-logo">
+    </div> -->
+</div>
+
+
+{% endblock %}

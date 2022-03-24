@@ -1,16 +1,193 @@
 {% extends '/primerModulo/layouts/main.html' %}
 
 {% block body %}
-
-
-<div class="mobile-menu-overlay"></div>
-
+<!-- <link rel="stylesheet" type="text/css" href="static/src/plugins/bootstrap-touchspin/bootstrap-touchspin/jquery.bootstrap-touchspin.css"> -->
 <div class="main-container">
-    <div class="pd-ltr-20">
-        <h1>Esto es La vista agregar producto</h1>
+    <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+            <div class="pd-20 card-box mb-30">
+                <div class="clearfix">
+                    <h2 class="text-blue">Alta de Productos</h2>
+                </div>
+                <div class="wizard-content">
+                    <form class="wizard-circle">
+                        <h4>Datos generales</h4>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 mb-30">
+                                <div class="card-box pd-30 height-100-p">
+                                    <div class="col-md-12">
+                                        <div class="col-md-9">
+                                            <div class="form-group">
+                                                <label>Clave</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="form-group">
+                                                <label>Descripción</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="form-group">
+                                                <label>proveedor</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="form-group">
+                                                <label>Línea</label>
+                                                <select class="custom-select col-12">
+                                                    <option selected="">Seleccione una línea</option>
+                                                    <option value="1">Línea 1</option>
+                                                    <option value="2">Línea 2</option>
+                                                    <option value="3">Línea 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 mb-30">
+                                <div class="card-box pd-30 height-100-p">
+                                    <div class="col-md-12">
+                                        <div class="col-md-9">
+                                            <div class="form-group">
+                                                <label>Imagen del producto</label>
+                                                <textarea class="form-control" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <h4>Precios del producto</h4>
+                        <div class="row justify-content-center">
+                            <!--precios del producto-->
+                            <div class="col-lg-6 col-md-12 col-sm-12 mb-30">
+                                <div class="card-box pd-30 height-100-p">
+                                    <label>impuesto</label>
+                                    <input type="text" class="form-control">
+                                    <img src="/static/vendors/images/porcentajes.jpeg" style=" width: 30vh; margin-top:5vh; margin-left: 20vh; "  alt="">
+                                    </div>
+                                    </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 mb-30">
+                                <div class="card-box pd-30 height-100-p">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">clave precio</th>
+                                            <th scope="col">Descripción</th>
+                                            <th scope="col">Precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Precio público</td>
+                                            <td>
+                                                <input id="demo2" type="text" value="0" name="demo2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Precio minínimo</td>
+                                            <td>
+                                                <input id="demo2" type="text" value="0" name="demo2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Precio liquidación</td>
+                                            <td>
+                                                <input id="demo2" type="text" value="0" name="demo2">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="modal-footer justify-content">
+                            <a href="/productos" class="btn btn-secondary m-3">Descartar</a>
+
+                            <a href="/productos" class="btn btn-primary m-3">Guardar</a>
+                            
+                            <!-- <label>¿Estás seguro que quieres guardar? </label>
+                            <div class="row p-4 ">
+                                <a href="/productos" class="btn btn-success m-3">Aceptar</a>
+                                <a href="/productos" class="btn btn-danger m-3">cancelar</a>
+                            </div>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+            <!-- success Popup html Start -->
+            <div class="modal fade" id="success-modal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center font-18">
+                            <h3>Agregar producto</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Clave</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Descripción</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Linea</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>proveedor</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>precio publico</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- success Popup html End -->
+        </div>
+        <!-- <div class="footer-wrap pd-20 mb-20 card-box">
+            DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit
+                Hingarajiya</a>
+        </div> -->
     </div>
 </div>
 
+<script src="{{url_for('static',filename='vendors/scripts/mm.js')}}"></script>
+<script src="{{url_for('static',filename='vendors/scripts/advanced-components.js')}}"></script>
+
+<script src="{{url_for('static',filename='vendors/scripts/core.js')}}"></script>
+<script src="{{url_for('static',filename='vendors/scripts/script.min.js')}}"></script>
+<script src="{{url_for('static',filename='vendors/scripts/process.js')}}"></script>
+<script src="{{url_for('static',filename='vendors/scripts/layout-settings.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/apexcharts/apexcharts.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/responsive.bootstrap4.min.js')}}"></script>
+<script src="{{url_for('static',filename='vendors/scripts/dashboard.js')}}"></script>
 
 
 

@@ -1,0 +1,129 @@
+{% extends '/segundoModulo/layouts/main.html' %}
+
+{% block body %}
+
+
+<div class="main-container">
+    <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <!-- <div class="title">
+                            <h4>Form Wizards</h4>
+                        </div> -->
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="recibo-mercancia">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Recibo de mercancía [Alta de
+                                    documentos]</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-right">
+                        <div class="dropdown">
+                            <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                Opciones
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Exportar</a>
+                                <a class="dropdown-item" href="#">Imprimir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pd-20 card-box mb-30">
+                <div class="clearfix">
+                    <h4 class="text-blue h4">Alta de Recibo de mercancía [Recibo No. 12345]</h4>
+                </div>
+                <br>
+                <div class="wizard-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-30">
+                            <div class="card-box pd-30 height-100-p">
+                                <h5>Enlace de documentos</h5><br>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Seleccione la orden</label>
+                                            <select class="custom-select form-control">
+                                                <option value="Amsterdam">0001</option>
+                                                <option value="Berlin">0002</option>
+                                                <option value="Frankfurt">...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 text-right">
+                                        <button type="button" class="btn btn-danger">Cancelar</button>
+                                        <button type="button" class="btn btn-success">Buscar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 mb-30">
+                            <div class="card-box pd-30 height-100-p">
+                                <h5>Datos del recibo de mercancía</h5><br>
+                                <section>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Folio de la orden de compra:</label>
+                                                <input type="text" class="form-control" disabled="false">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Fecha de recepción:</label>
+                                                <input type="text" class="form-control" disabled="false">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Total del documento</label>
+                                                <input type="text" class="form-control" disabled="false">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 text-right">
+                                            <button type="button" class="btn btn-success">Guardar</button>
+                                        </div>
+                                    </div>
+                            </div>
+                            </section>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- success Popup html Start -->
+        <div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center font-18">
+                        <h3 class="mb-20">Recepción registrada con éxito!</h3>
+                        <div class="mb-30 text-center"><img src="vendors/images/success.png"></div>
+                        La recepción se ha guardado exitosamente
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- success Popup html End -->
+    </div>
+
+    <!-- <div class="footer-wrap pd-20 mb-20 card-box">
+            DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
+        </div> -->
+</div>
+</div>
+
+
+{% endblock %}
