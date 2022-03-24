@@ -14,63 +14,91 @@
                         <h5>Datos generales</h5>
                         <section>
                             <div class="row">
-                                <div class="col-lg-6 col-md-12 col-sm-12 mb-30">
-                                    <div class="card-box pd-30 height-100-p">
-                                        <h3>Datos generales</h3>
-                                <div class="col-md-12">
-                                    <div class="col-md-9">
-                                        <div class="form-group">
-                                            <label>Clave</label>
-                                            <input type="text" class="form-control">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label>Clave</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label>proveedor</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label>Descripción</label>
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Imagen</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input">
+                                            <label class="custom-file-label">Imagen del producto</label>
                                         </div>
                                     </div>
-                                    <div class="col-md-9">
-                                        <div class="form-group">
-                                            <label>Descripción</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <div class="form-group">
-                                            <label>proveedor</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-9">
-                                        <div class="form-group">
-                                            <label>Línea</label>
-                                            <select class="custom-select col-12">
-                                                <option selected="">Seleccione una línea</option>
-                                                <option value="1">Línea 1</option>
-                                                <option value="2">Línea 2</option>
-                                                <option value="3">Línea 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>    
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 mb-30">
-                            <div class="card-box pd-30 height-100-p">
-                                <div class="col-md-12">
-                                    <div class="col-md-9">
-                                        <div class="form-group">
-                                            <label>Imagen del producto</label>
-                                            <textarea class="form-control" rows="3"></textarea>
-                                        </div>
+                        </section>
+                        <!-- Step 2 -->
+                        <h5>Producto</h5>
+                        <section>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Línea</label>
+                                        <select class="custom-select col-12">
+                                            <option selected="">Seleccione una línea</option>
+                                            <option value="1">Línea 1</option>
+                                            <option value="2">Línea 2</option>
+                                            <option value="3">Línea 3</option>
+                                        </select>
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Observaciones</label>
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
                                 </div>
-                                </div>
-                        </div>
-                                </section>
+                            </div>
+                        </section>
                         <!-- Step 3 -->
                         <h5>Precios</h5>
-                        <section>
-                            <div class="row justify-content-center">
+                        <section> 
+                            <div class="row">
+                                <div class="row m-2">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Precio Público</label>
+                                            <input type="text" value="0.00" class="form-control" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Existencia</label>
+                                            <input type="text" value="0" class="form-control" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Unidad de entrada</label>
+                                            <input type="text" value="pz" class="form-control" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Unidad de salida</label>
+                                            <input type="text" value="pz" class="form-control" disabled>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!--precios del producto-->
                                 <div class="col-md-10">
-                                    <h3>Precios del producto</h3>
+                                    <label>Otros precios</label>
                                     <table class="table table-striped table-bordered">
                                         <thead>
                                             <tr>
@@ -95,6 +123,11 @@
                                                 <td>Precio liquidación</td>
                                                 <td><input type="text" class="form-control"></td>
                                             </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>Precio especial</td>
+                                                <td><input type="text" class="form-control"></td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -109,46 +142,12 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-body text-center font-18">
-                            <h3>Agregar producto</h3>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Clave</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Descripción</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Linea</label>
-                                        <input type="text" class="form-control">
-                                    </div> 
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>proveedor</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>precio publico</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
+                            <h3 class="mb-20">Alta de producto</h3>
+                            <div class="mb-30 text-center"><img src="vendors/images/success.png"></div>
+                            Se ha registrado con éxito el producto
                         </div>
                         <div class="modal-footer justify-content-center">
-                                <label>¿Estás seguro que quieres guardar?  </label>
-                                <div class="row p-4 ">
-                            <a href="/productos" class="btn btn-success m-3">Aceptar</a>
-                            <a href="/productos" class="btn btn-danger m-3">cancelar</a>
-                            </div>
+                            <a href="/productos" class="btn btn-primary" >Done</a>
                         </div>
                     </div>
                 </div>
