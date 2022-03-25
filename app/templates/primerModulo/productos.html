@@ -12,14 +12,20 @@
                     <h4 class="text-blue h4">Productos</h4>
                     <a href="/agregar-producto" class="btn btn-success c-w" id="reset-settings">Agregar producto</a>
                 </div>
-                <div class="input-group mb-3 col-md-4">
-                    <input type="text" class="form-control" placeholder="buscar por clave" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">Button</button>
+                <div class="pd-20">
+                    <div class="input-group mb-3 col-md-4">
+                        <input type="text" class="form-control" placeholder="buscar por clave" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">Buscar</button>
+                        </div>
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <hr style="width: 90%;">
+                </div>
+
                 <div class="pb-20">
-                    <table class="data-table table stripe hover nowrap">
+                    <table class="data-table table stripe hover nowra">
                         <thead>
                             <tr>
                                 <th class="table-plus datatable-nosort">Clave</th>
@@ -90,6 +96,38 @@
     </div>
 </div>
 
+<script src="{{url_for('static',filename='src/plugins/datatables/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/responsive.bootstrap4.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/dataTables.buttons.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/buttons.bootstrap4.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/buttons.print.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/buttons.html5.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/buttons.html5.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/buttons.flash.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/pdfmake.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/vfs_fonts.js')}}"></script>
+<script src="{{url_for('static',filename='vendors/scripts/datatable-setting.js')}}"></script>
 
+
+<script src="{{url_for('static',filename='vendors/scripts/core.js')}}"></script>
+<script src="{{url_for('static',filename='vendors/scripts/script.min.js')}}"></script>
+<script src="{{url_for('static',filename='vendors/scripts/process.js')}}"></script>
+<script src="{{url_for('static',filename='vendors/scripts/layout-settings.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/responsive.bootstrap4.min.js')}}"></script>
+<!-- buttons for Export datatable -->
+<script src="{{url_for('static',filename='src/plugins/datatables/js/dataTables.buttons.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/buttons.bootstrap4.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/buttons.print.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/buttons.html5.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/buttons.flash.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/pdfmake.min.js')}}"></script>
+<script src="{{url_for('static',filename='src/plugins/datatables/js/vfs_fonts.js')}}"></script>
+<!-- Datatable Setting js -->
+<script src="{{url_for('static',filename='vendors/scripts/datatable-setting.js')}}"></script></body>
 
 {% endblock %}

@@ -182,7 +182,7 @@ class Dropzone extends Emitter {
        * See [chunksUploaded](#config-chunksUploaded) for the callback to finalise an upload.
        */
       chunking: false,
-
+z
       /**
        * If `chunking` is enabled, this defines whether **every** file should be chunked,
        * even if the file size is below chunkSize. This means, that the additional chunk
