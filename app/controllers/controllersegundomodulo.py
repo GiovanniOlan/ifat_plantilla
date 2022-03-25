@@ -8,14 +8,14 @@ class IndexController(MethodView):
     def get(self):
         return render_template('/segundoModulo/index.html')
 
-class RecepcionController(MethodView):
+class RecibomercanciaController(MethodView):
     def get(self):
-        return render_template('/segundoModulo/recepcion.html')
+        return render_template('/segundoModulo/recibo-mercancia.html')
 
-class NuevarecepcionController(MethodView):
+class NuevoreciboController(MethodView):
     def get(self):
-        return render_template('/segundoModulo/nueva-recepcion.html')
+        return render_template('/segundoModulo/nuevo-recibo.html')
 
-class ReporterecepcionController(MethodView):
+class ReportereciboController(MethodView):
     def get(self):
-        return render_template('/segundoModulo/reporte-recepcion.html')
+        return render_template('/segundoModulo/reporte-recibo.html')

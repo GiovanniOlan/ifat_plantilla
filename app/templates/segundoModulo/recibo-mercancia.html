@@ -1,4 +1,4 @@
-{% extends '/primerModulo/layouts/main.html' %}
+{% extends '/segundoModulo/layouts/main.html' %}
 
 {% block body %}
 
@@ -10,11 +10,11 @@
             <!-- Simple Datatable start -->
             <div class="card-box mb-30">
                 <div class="pd-20" style="display: flex; justify-content: space-between;">
-                    <h4 class="text-blue h4">Recepciones</h4>
+                    <h4 class="text-blue h4">Recibo de mercancía</h4>
                 </div>
                 <div class="pb-20" style="padding: 10px 10px; justify-content: flex-end;">
-                    <a href="reporte-recepcion" class="btn btn-dark" id="reset-settings">Reporte por proveedor</a>
-                    <a href="nueva-recepcion" class="btn btn-success" id="reset-settings">Nueva Recepción</a>
+                    <a href="reporte-recibo" class="btn btn-dark" id="reset-settings">Reporte por proveedor</a>
+                    <a href="nuevo-recibo" class="btn btn-success" id="reset-settings">Nuevo recibo de mercancía</a>
                 </div>
                 <div class="pb-20">
                     <table class="data-table table stripe hover nowrap">
@@ -27,9 +27,6 @@
                                 <th>Fecha de documento</th>
                                 <th>Con documento asociado</th>
                                 <th>Total del documento</th>
-                                <th>Fecha de Recepción</th>
-                                <th>Enlazado</th>
-                                <th>Fecha de cancelación</th>
                                 <th class="datatable-nosort">Acciones</th>
                             </tr>
                         </thead>
@@ -40,11 +37,8 @@
                                 <td>Proveedor</td>
                                 <td>Emitida</td>
                                 <td>11/03/2022</td>
-                                <td>c-001</td>
+                                <td>0002</td>
                                 <td>2,000</td>
-                                <td>13/03/2022</td>
-                                <td>S</td>
-                                <td></td>
                                 <td>
                                     <div class="dropdown">
                                         <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
