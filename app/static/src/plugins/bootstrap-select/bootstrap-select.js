@@ -1096,7 +1096,7 @@
 
       drop =
         '<div class="dropdown bootstrap-select' + showTick + inputGroup + '">' +
-          '<button type="button" class="' + this.options.styleBase + ' dropdown-toggle" ' + (this.options.display === 'static' ? 'data-display="static"' : '') + 'data-toggle="dropdown"' + autofocus + ' role="combobox" aria-owns="' + this.selectId + '" aria-haspopup="listbox" aria-expanded="false">' +
+          '<button type="button" class="' + this.options.styleBase + ' dropdown-toggle" ' + (this.options.display === 'static' ? 'data-display="static"' : '') + 'data-toggle="dropdown"' + autofocus + ' role="combobox" aria-owns="' + this.selectId + '" aria-haspopup="listbox" aria-expanded="true">' +
             '<div class="filter-option">' +
               '<div class="filter-option-inner">' +
                 '<div class="filter-option-inner-inner"></div>' +
@@ -3140,7 +3140,6 @@
     })
   });
 })(jQuery);
-
 
 }));
 //# sourceMappingURL=bootstrap-select.js.map
