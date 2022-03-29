@@ -11,6 +11,9 @@ class IndexController(MethodView):
 class ProveedoresController(MethodView):
     def get(self):
         return render_template('/primerModulo/proveedores.html')
+class AgregarproveedoresController(MethodView):
+    def get(self):
+        return render_template('/primerModulo/addProveedor.html')
 
 class ProductosController(MethodView):
     def get(self):
