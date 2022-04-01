@@ -33,83 +33,91 @@
             </div>-->
 
             <div class="pd-20 card-box mb-30">
-                <div class="clearfix">
-                    <h4 class="text-blue h4">Nuevo proveedor</h4>
-                </div>
-                <div class="wizard-content">
-                    <form class="tab-wizard wizard-circle wizard">
-                        <h5>Información personal</h5>
-                        <section>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label >Nombre :</label>
-                                        <input type="text" value="" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label >Apellido Paterno:</label>
-                                        <input type="text" value="" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label >Apellido Materno :</label>
-                                        <input type="text" value="" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Dirección :</label>
-                                        <input type="text" value="" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>Codigo Postal :</label>
-                                        <input type="tel" value="" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label>CURP :</label>
-                                        <input type="text" value="" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>RFC</label>
-                                        <input type="text"  class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Step 2 -->
-                        <h5>Información de contacto</h5>
-                        <section>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Telefono</label>
-                                        <input type="number" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Correo</label>
-                                        <input type="email" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </form>
-                </div>
-            </div>
+				<div class="clearfix">
+					<h4 class="text-blue h4">Agregar Proveedor</h4>
+				</div>
+				<br>
+				<div class="wizard-content">
+					<div class="row">
+						<div class="col-lg-6 col-md-12 col-sm-12 mb-30">
+							<div class="card-box pd-30 height-100-p">
+								<h5>Datos del Proveedor</h5><br>
+								<section>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label>Nombre del proveedor:</label>
+												<input type="text" class="form-control"
+													placeholder="Ingrese el nombre del proveedor">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Apellido paterno:</label>
+												<input type="text" class="form-control" placeholder="Apellido paterno">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Apellido materno:</label>
+												<input type="text" class="form-control" placeholder="Apellido materno">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<label>Dirección:</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12 mb-30">
+							<div class="card-box pd-30 height-100-p">
+								<div class="row">
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Codigo postal</label>
+											<input type="number" class="form-control" placeholder="Codigo postal">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>CURP</label>
+											<input type="text" class="form-control" placeholder="CURP">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>RFC</label>
+											<input type="text" class="form-control" placeholder="RFC">
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Telefono</label>
+											<input type="number" class="form-control" placeholder="Telefono">
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Correo</label>
+											<input type="email" class="form-control" placeholder="correo (opcional)">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 d-flex justify-content-end">
+									<button type="button" class="btn btn-success">Guardar producto</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
             <!-- success Popup html Start -->
             <div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

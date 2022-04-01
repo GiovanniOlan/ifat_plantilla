@@ -1,28 +1,34 @@
 {% extends '/primerModulo/layouts/main.html' %}
 
 {% block body %}
+
+
 <div class="main-container">
+
   <div class="pd-ltr-20 xs-pd-20-10">
+    <div class="page-header">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+
+          <nav aria-label="breadcrumb" role="navigation">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Form Wizards</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
     <div class="min-height-200px">
       <!-- Simple Datatable start -->
       <div class="card-box mb-30">
-        <div
-          class="pd-20"
-          style="display: flex; justify-content: space-between"
-        >
+        <div class="pd-20" style="display: flex; justify-content: space-between">
           <h4 class="text-blue h4">Proveedores</h4>
-          <a
-          href="nuevoProveedor.html"
-          class="btn btn-dark c-w"
-          id="reset-settings"
-          >Lista ocultos</a
-        >
-          <a
-            href="/agregar-proveedor"
-            class="btn btn-success c-w"
-            id="reset-settings"
-            >Nuevo Proveedor</a
-          >
+          <div>
+            <a href="nuevoProveedor.html" class="btn btn-dark c-w" id="reset-settings">Lista ocultos</a>
+            <a href="/agregar-proveedor" class="btn btn-success c-w" id="reset-settings">Nuevo Proveedor</a>
+          </div>
+
         </div>
         <div class="pb-20">
           <table class="data-table table stripe hover nowrap">
@@ -42,16 +48,6 @@
               <tr>
                 <td class="table-plus">
                   1
-                  <div class="custom-control custom-switch">
-                    <input
-                      type="checkbox"
-                      class="custom-control-input"
-                      id="customSwitch1"
-                    />
-                    <label class="custom-control-label" for="customSwitch1"
-                      >Ocultar</label
-                    >
-                  </div>
                 </td>
                 <td>Carlos Andres</td>
                 <td>Castellanos Hernandez</td>
@@ -67,27 +63,14 @@
                 </td>
                 <td>
                   <div class="dropdown">
-                    <a
-                      class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-toggle="dropdown"
-                    >
+                    <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
+                      data-toggle="dropdown">
                       <i class="dw dw-more"></i>
                     </a>
-                    <div
-                      class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                    >
-                      <a class="dropdown-item" href="modProveedor.html"
-                        ><i class="dw dw-edit2"></i>Modificar</a
-                      >
-                      <a
-                        class="dropdown-item"
-                        href="#"
-                        data-toggle="modal"
-                        data-target="#alert-modal"
-                        ><i class="dw dw-delete-3"></i>Eliminar</a
-                      >
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                      <a class="dropdown-item" href="modProveedor.html"><i class="dw dw-edit2"></i>Modificar</a>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#alert-modal"><i
+                          class="dw dw-delete-3"></i>Ocultar</a>
                     </div>
                   </div>
                 </td>
@@ -95,16 +78,6 @@
               <tr>
                 <td class="table-plus">
                   2
-                  <div class="custom-control custom-switch">
-                    <input
-                      type="checkbox"
-                      class="custom-control-input"
-                      id="customSwitch2"
-                    />
-                    <label class="custom-control-label" for="customSwitch2"
-                      >Ocultar</label
-                    >
-                  </div>
                 </td>
                 <td>Carlos Andres</td>
                 <td>Castellanos Hernandez</td>
@@ -120,23 +93,13 @@
                 </td>
                 <td>
                   <div class="dropdown">
-                    <a
-                      class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-toggle="dropdown"
-                    >
+                    <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
+                      data-toggle="dropdown">
                       <i class="dw dw-more"></i>
                     </a>
-                    <div
-                      class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                    >
-                      <a class="dropdown-item" href="modProveedor.html"
-                        ><i class="dw dw-edit2"></i>Modificar</a
-                      >
-                      <a class="dropdown-item" href="#"
-                        ><i class="dw dw-delete-3"></i>Eliminar</a
-                      >
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                      <a class="dropdown-item" href="modProveedor.html"><i class="dw dw-edit2"></i>Modificar</a>
+                      <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i>Ocultar</a>
                     </div>
                   </div>
                 </td>
@@ -144,16 +107,6 @@
               <tr>
                 <td class="table-plus">
                   3
-                  <div class="custom-control custom-switch">
-                    <input
-                      type="checkbox"
-                      class="custom-control-input"
-                      id="customSwitch3"
-                    />
-                    <label class="custom-control-label" for="customSwitch3"
-                      >Ocultar</label
-                    >
-                  </div>
                 </td>
                 <td>Carlos Andres</td>
                 <td>Castellanos Hernandez</td>
@@ -169,23 +122,13 @@
                 </td>
                 <td>
                   <div class="dropdown">
-                    <a
-                      class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-toggle="dropdown"
-                    >
+                    <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button"
+                      data-toggle="dropdown">
                       <i class="dw dw-more"></i>
                     </a>
-                    <div
-                      class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-                    >
-                      <a class="dropdown-item" href="modProveedor.html"
-                        ><i class="dw dw-edit2"></i>Modificar</a
-                      >
-                      <a class="dropdown-item" href="#"
-                        ><i class="dw dw-delete-3"></i>Eliminar</a
-                      >
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                      <a class="dropdown-item" href="modProveedor.html"><i class="dw dw-edit2"></i>Modificar</a>
+                      <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i>Ocultar</a>
                     </div>
                   </div>
                 </td>
